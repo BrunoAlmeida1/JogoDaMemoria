@@ -11,3 +11,5 @@ Jogo desenvolvido para atender ao desafio Javascript do TQI Bootcamp promovido p
 ### Acesso
 - Clique [aqui](https://brunoalmeida1.github.io/dio-memory-game-js/) para jogar agora
 - Ou clone o repositório ou baixe o .zip e abra o index.html no seu navegador
+
+![Página do Jogo](https://github.com/BrunoAlmeida1/dio-memory-game-js/blob/main/assets/img/print.jpg)
