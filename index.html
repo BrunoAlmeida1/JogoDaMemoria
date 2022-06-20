@@ -10,9 +10,13 @@
 
 <body>
     <div id="container">
-        <audio id="mp3" autostart="true" autoplay="true" controls="controls" loop="true">
-            <source src="./assets/mp3/The-Imperial-March.mp3" type="audio/mp3">
-        </audio>
+        <object id="mp3" width="300" height="50">
+            <param name="src" value="./assets/mp3/The-Imperial-March.mp3">
+            <param name="autoplay" value="true">
+            <param name="controller" value="true">
+            <param name="bgcolor" value="#FFFFFF"> <embed src="./assets/mp3/The-Imperial-March.mp3" autostart="true"
+                loop="true" width="300" height="50" controller="true">
+        </object>
         <div id="counter">
             <h1>TENTATIVAS <br>DISPONÍVEIS</h1>
             <span id="number">4</span>
