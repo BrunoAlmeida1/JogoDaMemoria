@@ -97,10 +97,12 @@ function checkCurrentNumber(currentNumber) {
 //função que mostra ou esconde as informações do jogo
 function showAbout() {
     if (!visible) {
+        aboutBtn.classList.add("changeColor");
         document.getElementById("text").style.visibility = "visible";
         visible = true;
     }
     else {
+        aboutBtn.classList.remove("changeColor");
         document.getElementById("text").style.visibility = "hidden";
         visible = false;
     }
