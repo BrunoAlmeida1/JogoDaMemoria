@@ -52,7 +52,7 @@ body {
     letter-spacing: 1px;
     position: relative;
     top: 80px;
-    left: 60px;
+    left: 255px;
     cursor: pointer;
 }
 
@@ -118,7 +118,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    left: 120px;
+    left: 220px;
     perspective: 1000px;
 }
 
