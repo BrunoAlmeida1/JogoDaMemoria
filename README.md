@@ -2,7 +2,7 @@
 
 Jogo desenvolvido para atender ao desafio Javascript do TQI Bootcamp promovido pela DIO.  
 
-<h3>Funcionalidades</h3>
+### :hammer: Funcionalidades
 -`Botão shuffle que não atualiza a página`
 -`Limite de tentativas para deixar o jogo mais desafiador`
 -`Mensagem de derrota ou vitória dependendo do resultado da partida`
