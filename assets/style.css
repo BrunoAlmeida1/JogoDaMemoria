@@ -24,17 +24,6 @@ body {
     align-items: center;
 }
 
-#mp3 {
-    height: 50px;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    bottom: 250px;
-    left: 0px;
-    visibility: hidden;
-}
-
 #counter {
     color: aliceblue;
     font-size: 25px;
