@@ -1,2 +1,9 @@
-# dio-memory-game-js
-Jogo da memória desenvolvido com HTML, CSS e JavaScript para atender a um dos desáfios do bootcamp da TQI promovido pela DIO. 
+<h1>Jogo da Memória em HTML, CSS e JavaScript</h1>
+
+Jogo desenvolvido para atender ao desafio Javascript do TQI Bootcamp promovido pela DIO.  
+
+<h3>Funcionalidades</h3>
+-`Botão shuffle que não atualiza a página`
+-`Limite de tentativas para deixar o jogo mais desafiador`
+-`Mensagem de derrota ou vitória dependendo do resultado da partida`
+-`Botão de informações sobre o jogo`
