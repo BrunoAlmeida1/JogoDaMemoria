@@ -52,7 +52,7 @@ body {
     font-size: 60px;
 }
 
-#refresh {
+#shuffle {
     height: 70px;
     width: 140px;
     background-color: aliceblue;
@@ -67,7 +67,7 @@ body {
     cursor: pointer;
 }
 
-#refresh:hover {
+#shuffle:hover {
     color: aliceblue;
     background-color: black;
 }

@@ -2,12 +2,12 @@ const cards = document.querySelectorAll('.card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
-let refresh = document.querySelector('#refresh');
+let shuffle = document.querySelector('#shuffle');
 let aboutBtn = document.querySelector('#about');
 let visible = false;
 let number = document.getElementById("number");
 let txt = document.getElementsByTagName("h1")[0];
-let currentNumber = 4, hits = 0;
+var currentNumber = 4, hits = 0;
 
 //função para virar carta
 function flipCard() {
@@ -81,7 +81,7 @@ function resetBoard() {
 //função que analisa se o jogador venceu
 function checkHits(hits) {
     if (hits === 6) {
-        txt.innerHTML = "Você venceu!";
+        txt.innerHTML = "Parabéns! <br> Você venceu!";
         document.getElementById("number").style.visibility = "hidden";
     }
 }
@@ -89,7 +89,7 @@ function checkHits(hits) {
 //função que analisa se o jogador perdeu
 function checkCurrentNumber(currentNumber) {
     if (currentNumber === 0) {
-        txt.innerHTML = "Você perdeu!";
+        txt.innerHTML = " Fim de jogo <br> Você perdeu!";
         document.getElementById("number").style.visibility = "hidden";
     }
 }
@@ -113,9 +113,35 @@ cards.forEach((card) => {
 });
 
 //função para embaralhar as cartas
-refresh.addEventListener('click', function () {
-    location.reload();
-})
+shuffle.addEventListener('click', function () {
+    cards.forEach((card) => {
+        card.classList.remove("flip");
+        card.addEventListener('click', flipCard);
+        resetData();
+    })
+    main();
+});
+
+function sleep(millis) {
+    return new Promise(resolve => setTimeout(resolve, millis))
+}
+
+async function main() {
+    await sleep(1000);
+    cards.forEach((card) => {
+        let ramdomPosition = Math.floor(Math.random() * 12);
+        card.style.order = ramdomPosition;
+    })
+    resetData();
+}
+
+function resetData() {
+    currentNumber = 4;
+    number.innerHTML = currentNumber;
+    hits = 0;
+    txt.innerHTML = "TENTATIVAS<br>DISPONÍVEIS";
+    document.getElementById("number").style.visibility = "visible";
+}
 
 //botão de ajuda sobre o jogo
 aboutBtn.addEventListener('click', showAbout);
